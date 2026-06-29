@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbitrary Markup & Affiliate Commission Handover Guide</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for premium typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        coral: {
+                            50: '#fff1f2',
+                            100: '#ffe1e3',
+                            200: '#ffc8cb',
+                            300: '#ffa1a6',
+                            400: '#ff6d75',
+                            500: '#ff444f', // Main Deriv Coral Red
+                            600: '#eb323d',
+                            700: '#c51d28',
+                            800: '#a31b24',
+                            900: '#871b22',
+                            950: '#4c0a0e',
+                        },
+                        derivDark: {
+                            50: '#f6f6f7',
+                            100: '#eef0f2',
+                            200: '#dadfe5',
+                            300: '#b8c3cf',
+                            400: '#91a1b5',
+                            500: '#72859e',
+                            600: '#5b6f88',
+                            700: '#4a596e',
+                            800: '#2a303a',
+                            900: '#15171e', // Deriv Charcoal Slate
+                            950: '#0e1014', // Deriv Pitch Black
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .code-font {
+            font-family: 'Fira Code', monospace;
+        }
+        /* Custom slide transitions */
+        .slide-enter {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+        .slide-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 h-full flex flex-col overflow-hidden">
+
+    <!-- Top Navigation Header -->
+    <header class="bg-derivDark-950 text-white px-6 py-4 flex items-center justify-between shadow-md shrink-0 border-b border-derivDark-900">
+        <div class="flex items-center space-x-3">
+            <div class="bg-coral-500 p-2 rounded-lg text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+            </div>
+            <div>
+                <h1 class="text-lg font-bold tracking-tight leading-none">The Paymaster's Guide</h1>
+                <p class="text-xs text-slate-400 mt-1">Arbitrary Markup & Affiliate Commission Handover</p>
+            </div>
+        </div>
+        <div class="flex items-center space-x-4">
+            <span class="text-xs bg-derivDark-900 text-coral-400 font-semibold px-3 py-1 rounded-full border border-derivDark-800">
+                May 2026 Procedures
+            </span>
+            <div class="text-sm font-medium text-slate-300">
+                Slide <span id="current-slide-badge" class="text-coral-500 font-bold">1</span> of 12
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Body -->
+    <div class="flex flex-1 overflow-hidden">
+        
+        <!-- Interactive Sidebar Index -->
+        <aside class="w-80 bg-slate-100 border-r border-slate-200 p-4 flex flex-col justify-between hidden md:flex shrink-0">
+            <div>
+                <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3 px-2">Table of Contents</h3>
+                <nav class="space-y-1" id="sidebar-nav">
+                    <!-- Dynamic Slide Tabs Inserted Here -->
+                </nav>
+            </div>
+            
+            <!-- Handover Quick Tips Panel -->
+            <div class="bg-coral-50 border border-coral-100 rounded-xl p-4">
+                <h4 class="text-xs font-bold text-coral-900 uppercase tracking-wide mb-1 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-coral-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Pro Handover Tip
+                </h4>
+                <p class="text-xs text-coral-700 leading-relaxed" id="handover-tip">
+                    Always rename your CSV files to start with "VERIFIED_" before sending! It keeps our audit trails clean.
+                </p>
+            </div>
+        </aside>
+
+        <!-- Presentation Slide Viewport -->
+        <main class="flex-1 bg-white p-6 md:p-8 overflow-y-auto flex flex-col justify-between relative">
+            
+            <!-- Alert/Notification Modal Container (No Native alert() Allowed) -->
+            <div id="app-modal" class="hidden absolute top-4 left-1/2 transform -translate-x-1/2 z-50 bg-derivDark-950 text-white rounded-xl shadow-2xl p-4 max-w-md border border-derivDark-800 flex items-start space-x-3 transition-all duration-300">
+                <div id="modal-icon-container" class="bg-coral-500 rounded-full p-2 text-white shrink-0">
+                    <!-- Dynamic SVG Status Icon -->
+                </div>
+                <div>
+                    <h4 id="modal-title" class="font-bold text-sm">Notification</h4>
+                    <p id="modal-desc" class="text-xs text-slate-300 mt-1">Message content goes here.</p>
+                </div>
+                <button onclick="closeAppModal()" class="text-slate-400 hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Slide Content Stage -->
+            <div id="slide-stage" class="slide-enter slide-active h-full flex flex-col justify-between">
+                <!-- Dynamically rendered active slide contents go here -->
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Navigation Footer Controls -->
+    <footer class="bg-derivDark-950 text-white px-6 py-4 flex items-center justify-between border-t border-derivDark-900 shrink-0">
+        <button id="btn-prev" onclick="changeSlide(-1)" class="flex items-center space-x-2 px-4 py-2 bg-derivDark-800 hover:bg-derivDark-700 text-slate-300 rounded-lg transition-colors font-medium text-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            <span>Previous</span>
+        </button>
+
+        <!-- Progress Dots Bar -->
+        <div class="hidden sm:flex items-center space-x-2" id="progress-dots-container">
+            <!-- Dynamic Dots Embedded Here -->
+        </div>
+
+        <button id="btn-next" onclick="changeSlide(1)" class="flex items-center space-x-2 px-4 py-2 bg-coral-500 hover:bg-coral-600 text-white rounded-lg transition-colors font-medium text-sm shadow-sm">
+            <span>Next</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+    </footer>
+
+    <!-- App Logic Block -->
+    <script>
+        // Slide Catalog State
+        let currentSlideIdx = 0;
+        
+        // Checklist data structure for Interactive Audit Slide
+        const initialChecklistState = {
+            v1Amount: true,
+            v1LoginId: true,
+            v2Amount: true,
+            v2ClientId: true,
+            v2WalletId: true,
+            v2Currency: true,
+            v2Remarks: true
+        };
+
+        // Simulated CSV Data loaded from user's attached documents
+        const sampleV2CSV = [
+            { wallet_id: "d816f2b4-51f4-44a6-8e46-07d10e9e8f68", currency: "USD", amount: 218.41, comment: "Partner Arbitrary Markup May 2026", type: "Adjustment" },
+            { wallet_id: "09560424-6789-4323-b888-4244c3bea4cd", currency: "USD", amount: 3.48, comment: "Partner Arbitrary Markup May 2026", type: "Adjustment" },
+            { wallet_id: "15a4b9cb-9302-43a5-b26c-bf325ace3041", currency: "USD", amount: 5144.70, comment: "Partner Arbitrary Markup May 2026", type: "Adjustment" },
+            { wallet_id: "53c1e3f6-5a55-4776-b9ef-43f3318c8912", currency: "USD", amount: 238.92, comment: "Partner Arbitrary Markup May 2026", type: "Adjustment" },
+            { wallet_id: "c4af694d-9df1-419d-b1f9-8f0f47cc0f52", currency: "USD", amount: 547.10, comment: "Partner Arbitrary Markup May 2026", type: "Adjustment" }
+        ];
+
+        const sampleV1CSV = [
+            { login_id: "CR5977250", currency: "USD", amount: 5102.79, comment: "Payment for arbitrary markup May 2026", type: "Manual Credit" },
+            { login_id: "CR8360075", currency: "USD", amount: 8436.65, comment: "Payment for arbitrary markup May 2026", type: "Manual Credit" },
+            { login_id: "CR8360075", currency: "USD", amount: 10000.00, comment: "Payment for arbitrary markup May 2026", type: "Manual Credit" },
+            { login_id: "CR8360075", currency: "USD", amount: 9000.00, comment: "Payment for arbitrary markup May 2026", type: "Manual Credit" },
+            { login_id: "CR8360075", currency: "USD", amount: 8000.00, comment: "Payment for arbitrary markup May 2026", type: "Manual Credit" },
+            { login_id: "CR8699694", currency: "USD", amount: 403.25, comment: "Payment for arbitrary markup May 2026", type: "Manual Credit" }
+        ];
+
+        // Slide list definition
+        const slides = [
+            {
+                title: "1. Welcome & Overview",
+                tip: "The key objective of this process is absolute numerical accuracy to avoid over/underpaying partners.",
+                render: () => `
+                    <div class="max-w-4xl mx-auto flex flex-col justify-center h-full space-y-6">
+                        <div class="text-center space-y-4">
+                            <span class="px-3 py-1 bg-coral-100 text-coral-800 rounded-full text-xs font-semibold tracking-wider uppercase">Finance Handover</span>
+                            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-950 tracking-tight">Arbitrary Markup & Commission Payments</h2>
+                            <p class="text-slate-600 text-lg md:text-xl max-w-2xl mx-auto font-normal leading-relaxed">
+                                Welcome to your ultimate interactive training workbook! Learn how our finance and marketing systems connect to process partner commissions smoothly.
+                            </p>
+                        </div>
+
+                        <!-- Card Deck Feature Highlights -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6">
+                            <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 hover:border-coral-400 transition-all duration-300">
+                                <div class="bg-coral-500 text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold mb-4">1</div>
+                                <h4 class="font-bold text-slate-900 mb-1">Simple Explanations</h4>
+                                <p class="text-xs text-slate-500 leading-relaxed">Complex jargon turned into crystal clear real-world examples that anyone can pick up in seconds.</p>
+                            </div>
+                            <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 hover:border-coral-400 transition-all duration-300">
+                                <div class="bg-coral-500 text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold mb-4">2</div>
+                                <h4 class="font-bold text-slate-900 mb-1">Visual Diagrams</h4>
+                                <p class="text-xs text-slate-500 leading-relaxed">Interactive flowcharts, a comprehensive organizational mindmap, and customized infographics.</p>
+                            </div>
+                            <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 hover:border-coral-400 transition-all duration-300">
+                                <div class="bg-coral-500 text-white w-10 h-10 rounded-lg flex items-center justify-center font-bold mb-4">3</div>
+                                <h4 class="font-bold text-slate-900 mb-1">Live Audit Sandbox</h4>
+                                <p class="text-xs text-slate-500 leading-relaxed">Step into the driver's seat. Check real CSV files, run mock audits, and clear a live training quiz.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-coral-50 border border-coral-100 rounded-xl p-4 text-center text-sm text-coral-900 font-medium max-w-lg mx-auto">
+                            💡 Use the <strong>Next</strong> button below or click slides in the sidebar to begin your journey!
+                        </div>
+                    </div>
+                `
+            },
+            {
+                title: "2. What is Arbitrary Markup?",
+                tip: "An 'arbitrary markup' isn't arbitrary in calculations; it's a fixed contractual rate agreed with system developers.",
+                render: () => `
+                    <div class="max-w-4xl mx-auto space-y-6 h-full flex flex-col justify-center">
+                        <div>
+                            <span class="text-xs font-bold text-coral-500 uppercase tracking-widest">Layman's Analogy</span>
+                            <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Understanding "Arbitrary Markup"</h2>
+                        </div>
+
+                        <!-- Analogy Showcase -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                            <div class="space-y-4">
+                                <h3 class="text-xl font-bold text-slate-900">The Ice Cream Stand Analogy 🍦</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    Imagine you own a busy ice cream stand. You want to reach customers in another neighborhood, but you don't have a truck.
+                                </p>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    So, an <strong>independent driver (API Developer)</strong> brings their own truck, hooks into your freezer, and sells your ice cream.
+                                </p>
+                                <p class="text-sm text-slate-600 leading-relaxed">
+                                    For every scoop they sell, you agreed to pay them a small bonus "tip" or commission. In our tech world, this tip is called the <strong>Arbitrary Markup Commission</strong>.
+                                </p>
+                            </div>
+
+                            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm space-y-4">
+                                <div class="flex items-center space-x-3 text-emerald-600 bg-emerald-50 p-3 rounded-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-bold text-xs text-emerald-950 uppercase">Simple Definition</h4>
+                                        <p class="text-xs text-emerald-800">Monthly commission paid to third-party developers who use our tools (APIs) to drive trade volume to our systems.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3 text-coral-500 bg-coral-50 p-3 rounded-lg border border-coral-100">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <div>
+                                        <h4 class="font-bold text-xs text-coral-950 uppercase">Timing</h4>
+                                        <p class="text-xs text-coral-800">Calculated and processed <strong>monthly</strong> based on actual trades generated by the partner.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                title: "3. The Tale of Two Systems (V1 vs V2)",
+                tip: "Double check whether the CSV contains V1 Login IDs or V2 Wallet UUIDs. Mixing them up blocks payments.",
+                render: () => `
+                    <div class="max-w-4xl mx-auto space-y-6 h-full flex flex-col justify-center">
+                        <div>
+                            <span class="text-xs font-bold text-coral-500 uppercase tracking-widest">Platform Architectures</span>
+                            <h2 class="text-3xl font-extrabold text-slate-900 mt-1">V1 vs. V2: The Split Systems</h2>
+                            <p class="text-sm text-slate-500">We operate across two distinct platform architectures. You must identify them correctly.</p>
+                        </div>
+
+                        <!-- System Division Interactive Display -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- V1 Card -->
+                            <div class="border-2 border-slate-200 hover:border-coral-500 rounded-2xl p-6 transition-all duration-200 bg-white">
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-xs font-extrabold text-blue-700 bg-blue-50 px-3 py-1 rounded-full uppercase">BackOffice V1 (DSVG)</span>
+                                    <span class="text-xs font-semibold text-slate-400">Legacy Engine</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">How to identify V1 requests:</h3>
+                                <ul class="space-y-2 text-xs text-slate-600 mb-4">
+                                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-coral-500 rounded-full mr-2"></span>Uses customer <strong>Login IDs</strong> starting with <strong>"CR"</strong> (e.g. <code>CR5977250</code>).</li>
+                                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-coral-500 rounded-full mr-2"></span>Credited through BackOffice V1.</li>
+                                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-coral-500 rounded-full mr-2"></span>Generates a <strong>DCC Request</strong> code for tracking.</li>
+                                </ul>
+                                <div class="bg-slate-100 p-3 rounded-lg">
+                                    <span class="text-[10px] uppercase font-bold text-slate-500 block">V1 Sample Record</span>
+                                    <code class="text-xs text-coral-800 font-bold block overflow-x-auto whitespace-nowrap py-1">CR5977250, credit, arbitrary_markup, USD, 5102.79</code>
+                                </div>
+                            </div>
+
+                            <!-- V2 Card -->
+                            <div class="border-2 border-slate-200 hover:border-coral-500 rounded-2xl p-6 transition-all duration-200 bg-white">
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-xs font-extrabold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full uppercase">BackOffice V2 (DCI)</span>
+                                    <span class="text-xs font-semibold text-slate-400">Modern Wallet Suite</span>
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">How to identify V2 requests:</h3>
+                                <ul class="space-y-2 text-xs text-slate-600 mb-4">
+                                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-coral-500 rounded-full mr-2"></span>Uses <strong>Wallet IDs</strong> as UUIDs (e.g., <code>d816f2b4-...</code>).</li>
+                                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-coral-500 rounded-full mr-2"></span>Credited via the BackOffice V2 Wallet Tools.</li>
+                                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-coral-500 rounded-full mr-2"></span>Requires strict <strong>DCC Tool V2</strong> approval workflows.</li>
+                                </ul>
+                                <div class="bg-slate-100 p-3 rounded-lg">
+                                    <span class="text-[10px] uppercase font-bold text-slate-500 block">V2 Sample Record</span>
+                                    <code class="text-xs text-coral-800 font-bold block overflow-x-auto whitespace-nowrap py-1">d816f2b4-51f4-44a6-8e46-07d10e9e8f68, credit, USD, 218.41</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                title: "4. Mindmap: Who is Who?",
+                tip: "Click on any department node in the mindmap below to see their primary roles and compliance tasks.",
+                render: () => `
+                    <div class="max-w-4xl mx-auto space-y-6 h-full flex flex-col justify-center">
+                        <div>
+                            <span class="text-xs font-bold text-coral-500 uppercase tracking-widest">Who Does What?</span>
+                            <h2 class="text-3xl font-extrabold text-slate-900 mt-1">The Partner Payments Ecosystem</h2>
+                            <p class="text-sm text-slate-500">Every department acts as a checkpoint. Hover and click nodes to explore relationships.</p>
+                        </div>
+
+                        <!-- Mindmap Structure -->
+                        <div class="bg-derivDark-900 p-6 rounded-2xl relative overflow-hidden flex flex-col justify-between" style="min-height: 400px;">
+                            <div class="absolute inset-0 bg-[radial-gradient(#334155_1px,transparent_1px)] [background-size:16px_16px] opacity-35"></div>
+                            
+                            <!-- Main Ecosystem Diagram -->
+                            <div class="relative z-10 flex flex-col items-center justify-center space-y-6 py-4">
+                                <div class="bg-coral-500 text-white font-black px-6 py-3 rounded-xl shadow-lg border border-coral-400 text-center uppercase tracking-wider text-sm">
+                                    Arbitrary Markup payment
+                                </div>
+                                
+                                <div class="flex flex-wrap justify-center gap-4 w-full">
+                                    <!-- Node 1 -->
+                                    <button onclick="revealMindmapDetails('compliance')" class="bg-derivDark-800 hover:bg-derivDark-700 text-coral-400 border border-derivDark-700 rounded-lg p-3 w-44 text-left transition-all hover:scale-105">
+                                        <div class="text-[10px] uppercase text-slate-400 font-bold">Step 1</div>
+                                        <h4 class="font-bold text-xs text-white">Compliance Team</h4>
+                                        <span class="text-[10px] text-slate-400">The Gatekeepers</span>
+                                    </button>
+                                    
+                                    <!-- Node 2 -->
+                                    <button onclick="revealMindmapDetails('marketing')" class="bg-derivDark-800 hover:bg-derivDark-700 text-coral-400 border border-derivDark-700 rounded-lg p-3 w-44 text-left transition-all hover:scale-105">
+                                        <div class="text-[10px] uppercase text-slate-400 font-bold">Step 2</div>
+                                        <h4 class="font-bold text-xs text-white">Marketing Team</h4>
+                                        <span class="text-[10px] text-slate-400">The Calculators</span>
+                                    </button>
+
+                                    <!-- Node 3 -->
+                                    <button onclick="revealMindmapDetails('finance')" class="bg-derivDark-800 hover:bg-derivDark-700 text-coral-400 border border-derivDark-700 rounded-lg p-3 w-44 text-left transition-all hover:scale-105">
+                                        <div class="text-[10px] uppercase text-slate-400 font-bold">Step 3</div>
+                                        <h4 class="font-bold text-xs text-white">Finance (You)</h4>
+                                        <span class="text-[10px] text-slate-400">The Paymasters</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Interactive details box -->
+                            <div class="relative z-10 bg-derivDark-950 bg-opacity-95 border border-derivDark-800 rounded-xl p-4 text-slate-300 text-xs min-h-[100px] flex flex-col justify-center" id="mindmap-details-box">
+                                <div class="text-center text-slate-400 italic">Click one of the step cards above to view their detailed organizational responsibilities!</div>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                title: "5. The Lifecycle Flowchart",
+                tip: "This flowchart represents the exact procedure from your handover document. Memorize the email prefix step!",
+                render: () => `
+                    <div class="max-w-4xl mx-auto space-y-6 h-full flex flex-col justify-center">
+                        <div>
+                            <span class="text-xs font-bold text-coral-500 uppercase tracking-widest">End-To-End Procedure</span>
+                            <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Payment Process Flowchart</h2>
+                            <p class="text-sm text-slate-500">Interactive roadmap of operations. Click a stage to understand specific action points.</p>
+                        </div>
+
+                        <!-- Horizontal Interactive Flowchart -->
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                            <!-- Step 1 -->
+                            <button onclick="revealFlowchartStep(1)" class="flowchart-step-btn bg-slate-50 hover:bg-coral-50 border-2 border-slate-200 rounded-xl p-4 text-left transition-all duration-200">
+                                <span class="bg-slate-200 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded-full">Phase 1</span>
+                                <h4 class="font-bold text-xs text-slate-900 mt-2">Compliance OK</h4>
+                                <p class="text-[10px] text-slate-500 mt-1">Compliance verifies eligibility and marks status as 'OK to Pay'.</p>
+                            </button>
+
+                            <!-- Step 2 -->
+                            <button onclick="revealFlowchartStep(2)" class="flowchart-step-btn bg-slate-50 hover:bg-coral-50 border-2 border-slate-200 rounded-xl p-4 text-left transition-all duration-200">
+                                <span class="bg-slate-200 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded-full">Phase 2</span>
+                                <h4 class="font-bold text-xs text-slate-900 mt-2">Marketing Calculation</h4>
+                                <p class="text-[10px] text-slate-500 mt-1">Marketing builds CSV working files and shares request in Slack channel.</p>
+                            </button>
+
+                            <!-- Step 3 -->
+                            <button onclick="revealFlowchartStep(3)" class="flowchart-step-btn bg-slate-50 hover:bg-coral-50 border-2 border-slate-200 rounded-xl p-4 text-left transition-all duration-200">
+                                <span class="bg-slate-200 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded-full">Phase 3</span>
+                                <h4 class="font-bold text-xs text-slate-900 mt-2">Finance Audit</h4>
+                                <p class="text-[10px] text-slate-500 mt-1">You double check formatting, amounts, currency, and file naming.</p>
+                            </button>
+
+                            <!-- Step 4 -->
+                            <button onclick="revealFlowchartStep(4)" class="flowchart-step-btn bg-slate-50 hover:bg-coral-50 border-2 border-slate-200 rounded-xl p-4 text-left transition-all duration-200">
+                                <span class="bg-slate-200 text-slate-800 text-[10px] font-bold px-2 py-0.5 rounded-full">Phase 4</span>
+                                <h4 class="font-bold text-xs text-slate-900 mt-2">Reconciliation & Credit</h4>
+                                <p class="text-[10px] text-slate-500 mt-1">Submit workflow to process payment in BackOffice V1 or V2.</p>
+                            </button>
+                        </div>
+
+                        <!-- Visual details block -->
+                        <div class="bg-derivDark-900 text-white rounded-xl p-4 min-h-[90px] flex items-center justify-between" id="flowchart-details-panel">
+                            <div>
+                                <h4 class="font-bold text-xs uppercase text-coral-300">💡 Interactive Hint</h4>
+                                <p class="text-xs text-slate-200 mt-1">Click any flowchart phase above to see detail checklists and tools associated with that phase!</p>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                title: "6. The Checklist (Before We Pay)",
+                tip: "Marketing sends the CSV, but finance holds ultimate liability. Never process without completing these checks.",
+                render: () => `
+                    <div class="max-w-4xl mx-auto space-y-6 h-full flex flex-col justify-center">
+                        <div>
+                            <span class="text-xs font-bold text-coral-500 uppercase tracking-widest">Audit Standards</span>
+                            <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Pre-Crediting Checklist</h2>
+                            <p class="text-sm text-slate-500">Every CSV file must be strictly verified against these six specific parameters.</p>
+                        </div>
+
+                        <!-- Multi-Item Interactive Checklist Grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <!-- Left: Checks -->
+                            <div class="space-y-2">
+                                <div class="bg-slate-50 border border-slate-200 p-3 rounded-lg flex items-center space-x-3">
+                                    <input type="checkbox" id="chk-amount" class="h-4 w-4 text-coral-500 rounded focus:ring-coral-500" checked>
+                                    <div>
+                                        <h4 class="font-bold text-xs text-slate-900">1. Verification of Amounts</h4>
+                                        <p class="text-[10px] text-slate-500">Must exactly match the numbers calculated in Marketing's working files.</p>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-50 border border-slate-200 p-3 rounded-lg flex items-center space-x-3">
+                                    <input type="checkbox" id="chk-v1" class="h-4 w-4 text-coral-500 rounded focus:ring-coral-500" checked>
+                                    <div>
+                                        <h4 class="font-bold text-xs text-slate-900">2. Login ID (V1 Specific)</h4>
+                                        <p class="text-[10px] text-slate-500">Verify customer Login ID formatting. Must start with "CR".</p>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-50 border border-slate-200 p-3 rounded-lg flex items-center space-x-3">
+                                    <input type="checkbox" id="chk-v2" class="h-4 w-4 text-coral-500 rounded focus:ring-coral-500" checked>
+                                    <div>
+                                        <h4 class="font-bold text-xs text-slate-900">3. Client & Wallet IDs (V2 Specific)</h4>
+                                        <p class="text-[10px] text-slate-500">Ensure the wallet UUID is valid (has hyphens) and active.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right: Checks -->
+                            <div class="space-y-2">
+                                <div class="bg-slate-50 border border-slate-200 p-3 rounded-lg flex items-center space-x-3">
+                                    <input type="checkbox" id="chk-curr" class="h-4 w-4 text-coral-500 rounded focus:ring-coral-500" checked>
+                                    <div>
+                                        <h4 class="font-bold text-xs text-slate-900">4. Currency Match</h4>
+                                        <p class="text-[10px] text-slate-500">Confirm currency parameters match original system wallets (e.g. USD, EUR).</p>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-50 border border-slate-200 p-3 rounded-lg flex items-center space-x-3">
+                                    <input type="checkbox" id="chk-rem" class="h-4 w-4 text-coral-500 rounded focus:ring-coral-500" checked>
+                                    <div>
+                                        <h4 class="font-bold text-xs text-slate-900">5. Description & Remarks</h4>
+                                        <p class="text-[10px] text-slate-500">Always label clearly: e.g., "Payment for arbitrary markup May 2026".</p>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-50 border border-slate-200 p-3 rounded-lg flex items-center space-x-3">
+                                    <input type="checkbox" id="chk-temp" class="h-4 w-4 text-coral-500 rounded focus:ring-coral-500" checked>
+                                    <div>
+                                        <h4 class="font-bold text-xs text-slate-900">6. Marketing CSV Template</h4>
+                                        <p class="text-[10px] text-slate-500">Ensure Marketing did not inject extra blank lines or non-standard columns.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-3 flex items-start space-x-2 text-xs text-yellow-800">
+                            <span class="font-bold text-yellow-900 shrink-0">⚠️ Discrepancy Protocol:</span>
+                            <p>If any item in the checklist fails, immediately halt processing and post the anomaly inside the <strong>#partners_payment</strong> Slack channel.</p>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                title: "7. Interactive CSV Auditor Game",
+                tip: "Spot the formatting error on the rows below. Training sandbox is based on realistic system records.",
+                render: () => `
+                    <div class="max-w-4xl mx-auto space-y-6 h-full flex flex-col justify-center">
+                        <div>
+                            <span class="text-xs font-bold text-coral-500 uppercase tracking-widest">Training Simulator</span>
+                            <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Audit Sandbox: Spot the Errors!</h2>
+                            <p class="text-sm text-slate-500">Can you spot formatting or structural errors in these three simulated CSV rows? Click the error column to verify.</p>
+                        </div>
+
+                        <!-- Table Sandbox Simulator -->
+                        <div class="bg-derivDark-950 rounded-xl overflow-hidden border border-derivDark-900">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr class="bg-derivDark-900 text-slate-400 text-[10px] font-bold uppercase tracking-wider border-b border-derivDark-900">
+                                        <th class="p-3">Partner System Identifier</th>
+                                        <th class="p-3">Amt</th>
+                                        <th class="p-3">Currency</th>
+                                        <th class="p-3">Comments / Remarks</th>
+                                        <th class="p-3 text-right">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-xs code-font text-slate-200">
+                                    <!-- Row 1 -->
+                                    <tr class="border-b border-derivDark-900 hover:bg-derivDark-900 transition-colors">
+                                        <td class="p-3 text-emerald-400">CR_9983112 <span class="text-[9px] bg-red-950 text-red-400 font-extrabold px-1 rounded">V1 Target</span></td>
+                                        <td class="p-3">450.00</td>
+                                        <td class="p-3">USD</td>
+                                        <td class="p-3 text-slate-400">Payment for arbitrary markup May 2026</td>
+                                        <td class="p-3 text-right">
+                                            <button onclick="checkGameRow(1, 'identifier')" class="bg-coral-700 hover:bg-coral-600 text-white font-bold px-2 py-1 rounded text-[10px]">Flag Error</button>
+                                        </td>
+                                    </tr>
+                                    <!-- Row 2 -->
+                                    <tr class="border-b border-derivDark-900 hover:bg-derivDark-900 transition-colors">
+                                        <td class="p-3 text-coral-400">85fa2210-41fa-92da-1901bca2 <span class="text-[9px] bg-emerald-950 text-emerald-400 font-extrabold px-1 rounded">V2 Wallet</span></td>
+                                        <td class="p-3">1250.00</td>
+                                        <td class="p-3">USD</td>
+                                        <td class="p-3 text-slate-400">Partner Arbitrary Markup May 2026</td>
+                                        <td class="p-3 text-right">
+                                            <button onclick="checkGameRow(2, 'identifier')" class="bg-coral-700 hover:bg-coral-600 text-white font-bold px-2 py-1 rounded text-[10px]">Flag Error</button>
+                                        </td>
+                                    </tr>
+                                    <!-- Row 3 -->
+                                    <tr class="border-b border-derivDark-900 hover:bg-derivDark-900 transition-colors">
+                                        <td class="p-3 text-coral-400">d816f2b4-51f4-44a6-8e46-07d10e9e8f68 <span class="text-[9px] bg-emerald-950 text-emerald-400 font-extrabold px-1 rounded">V2 Wallet</span></td>
+                                        <td class="p-3 text-red-500">-218.41</td>
+                                        <td class="p-3">USD</td>
+                                        <td class="p-3 text-slate-400">Partner Arbitrary Markup May 2026</td>
+                                        <td class="p-3 text-right">
+                                            <button onclick="checkGameRow(3, 'amount')" class="bg-coral-700 hover:bg-coral-600 text-white font-bold px-2 py-1 rounded text-[10px]">Flag Error</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Solution Info Display -->
+                        <div id="game-feedback-panel" class="hidden bg-slate-100 border-l-4 border-coral-500 rounded-lg p-4 text-xs text-slate-700">
+                            <!-- Injected dynamically -->
+                        </div>
+                    </div>
+                `
+            },
+            {
+                title: "8. Slack & Email Communication",
+                tip: "Prefixes are mandatory! Missing 'VERIFIED:' will cause delays when the Reconciliation team filters their inbox.",
+                render: () => `
+                    <div class="max-w-4xl mx-auto space-y-6 h-full flex flex-col justify-center">
+                        <div>
+                            <span class="text-xs font-bold text-coral-500 uppercase tracking-widest">Standard Protocols</span>
+                            <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Communications & Auditable Trails</h2>
+                            <p class="text-sm text-slate-500">How we handle approvals and cross-department notification channels.</p>
+                        </div>
+
+                        <!-- Simulated Workspace Split View -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Slack Simulator Panel -->
+                            <div class="bg-derivDark-900 text-slate-200 rounded-xl overflow-hidden shadow-md flex flex-col">
+                                <div class="bg-derivDark-950 px-4 py-2 flex items-center justify-between border-b border-derivDark-900">
+                                    <div class="flex items-center space-x-2">
+                                        <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                                        <span class="text-xs font-bold font-mono">#partners_payment</span>
+                                    </div>
+                                    <span class="text-[9px] bg-derivDark-800 px-2 py-0.5 rounded text-slate-400">Slack</span>
+                                </div>
+                                <div class="p-4 space-y-4 text-xs flex-1">
+                                    <!-- Slack msg 1 -->
+                                    <div class="flex items-start space-x-2">
+                                        <div class="bg-coral-500 text-white font-bold px-2 py-1 rounded text-[10px]">Mktg</div>
+                                        <div>
+                                            <div class="font-bold text-[10px] text-slate-400">Marketing Team <span class="font-normal text-[9px] text-slate-500">10:14 AM</span></div>
+                                            <p class="text-slate-300 mt-0.5">Hi Finance team, we've shared the May 2026 commission payment requests over email. Please check!</p>
+                                        </div>
+                                    </div>
+                                    <!-- Slack msg 2 -->
+                                    <div class="flex items-start space-x-2 border-t border-derivDark-800 pt-3">
+                                        <div class="bg-emerald-600 text-white font-bold px-2 py-1 rounded text-[10px]">Fin</div>
+                                        <div>
+                                            <div class="font-bold text-[10px] text-slate-400">Finance Team (You) <span class="font-normal text-[9px] text-slate-500">10:45 AM</span></div>
+                                            <p class="text-coral-400 font-bold mt-0.5">🟢 Verified and Paid!</p>
+                                            <p class="text-slate-400 mt-0.5">Verified payment CSV uploaded. Subject updated to VERIFIED: Partner Arbitrary Markup May 2026.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Email Client Simulator -->
+                            <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-md flex flex-col">
+                                <div class="bg-slate-50 px-4 py-2 border-b border-slate-200 flex items-center justify-between">
+                                    <span class="text-xs font-bold text-slate-800">Finance Mail System</span>
+                                    <span class="text-[9px] bg-coral-100 text-coral-800 font-bold px-2 py-0.5 rounded uppercase">Outgoing Message</span>
+                                </div>
+                                <div class="p-4 space-y-2 text-xs flex-1">
+                                    <div>
+                                        <span class="text-slate-400">To:</span> <strong class="text-slate-700">Finance Reconciliation, Payments Team</strong>
+                                    </div>
+                                    <div class="border-b border-slate-100 pb-2">
+                                        <span class="text-slate-400">Subject:</span> <strong class="text-coral-500">VERIFIED: Partner Arbitrary Markup May 2026</strong>
+                                    </div>
+                                    <div class="text-slate-600 space-y-2 pt-2">
+                                        <p>Dear team,</p>
+                                        <p>Please find the verified partner commission file attached for processing.</p>
+                                        <p class="bg-slate-50 p-2 rounded border border-slate-100 font-mono text-[9px]">
+                                            📎 VERIFIED_Arbitrary Markup V2 May 2026.csv<br>
+                                            📎 VERIFIED_Arb Markup May'26 V1 Manual Credit 4.csv
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                title: "9. BackOffice Operations",
+                tip: "BackOffice V1 and V2 are accessed with separate access tokens. Double-check your active session before processing.",
+                render: () => `
+                    <div class="max-w-4xl mx-auto space-y-6 h-full flex flex-col justify-center">
+                        <div>
+                            <span class="text-xs font-bold text-coral-500 uppercase tracking-widest">Operational Guide</span>
+                            <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Executing Payments inside BackOffice</h2>
+                            <p class="text-sm text-slate-500">The mechanics of crediting partners across V1 and V2 platforms.</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- V1 Execution Card -->
+                            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-all">
+                                <div class="flex items-center space-x-2 mb-3">
+                                    <div class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-xs">V1</div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-900 text-sm">V1 - DSVG Execution</h4>
+                                        <p class="text-[10px] text-slate-400">BackOffice V1 Framework</p>
+                                    </div>
+                                </div>
+                                <ol class="space-y-3 text-xs text-slate-600">
+                                    <li class="flex items-start"><span class="bg-blue-100 text-blue-800 rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0 mr-2 font-bold">1</span> Open payment request email containing the approved commission CSV.</li>
+                                    <li class="flex items-start"><span class="bg-blue-100 text-blue-800 rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0 mr-2 font-bold">2</span> Submit the request to <strong>accs_recon_partners</strong> system tool.</li>
+                                    <li class="flex items-start"><span class="bg-blue-100 text-blue-800 rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0 mr-2 font-bold">3</span> Generate the corresponding <strong>DCC Request</strong> to initiate client manual credits.</li>
+                                </ol>
+                            </div>
+
+                            <!-- V2 Execution Card -->
+                            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 hover:shadow-md transition-all">
+                                <div class="flex items-center space-x-2 mb-3">
+                                    <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-xs">V2</div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-900 text-sm">V2 - DCI Wallet Execution</h4>
+                                        <p class="text-[10px] text-slate-400">BackOffice V2 Wallet Hub</p>
+                                    </div>
+                                </div>
+                                <ol class="space-y-3 text-xs text-slate-600">
+                                    <li class="flex items-start"><span class="bg-emerald-100 text-emerald-800 rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0 mr-2 font-bold">1</span> Double-check the partner's Client ID & unique Wallet ID in the CSV.</li>
+                                    <li class="flex items-start"><span class="bg-emerald-100 text-emerald-800 rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0 mr-2 font-bold">2</span> Approve the DCC transaction within the centralized <strong>DCC Tool</strong> interface.</li>
+                                    <li class="flex items-start"><span class="bg-emerald-100 text-emerald-800 rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0 mr-2 font-bold">3</span> Confirm standard payment adjustment statuses are updated to "Success".</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="bg-coral-50 border border-coral-100 rounded-xl p-4 text-xs text-coral-950 flex items-center justify-between">
+                            <span>🔒 <strong>Four-Eyes Principle:</strong> The workflow requires verification by a first officer and approval/generation by a second officer.</span>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                title: "10. Live CSV Inspector",
+                tip: "We have embedded actual records from May 2026's active payroll CSV documents for hands-on inspection.",
+                render: () => `
+                    <div class="max-w-4xl mx-auto space-y-4 h-full flex flex-col justify-center">
+                        <div>
+                            <span class="text-xs font-bold text-coral-500 uppercase tracking-widest">Interactive Playground</span>
+                            <h2 class="text-3xl font-extrabold text-slate-900">Active May 2026 CSV Datasets</h2>
+                            <p class="text-sm text-slate-500">Toggle between V1 and V2 source lists to inspect actual live database payroll variables.</p>
+                        </div>
+
+                        <!-- Tab Controls -->
+                        <div class="flex items-center space-x-2 bg-slate-100 p-1.5 rounded-lg w-fit">
+                            <button onclick="toggleCSVInspector('v1')" id="btn-csv-v1" class="text-xs font-bold px-4 py-1.5 rounded-md transition-all bg-coral-500 text-white shadow-sm">
+                                BackOffice V1 DSVG Dataset
+                            </button>
+                            <button onclick="toggleCSVInspector('v2')" id="btn-csv-v2" class="text-xs font-bold px-4 py-1.5 rounded-md transition-all text-slate-600 hover:text-slate-900">
+                                BackOffice V2 DCI Dataset
+                            </button>
+                        </div>
+
+                        <!-- Interactive Table Block -->
+                        <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                            <div class="overflow-y-auto max-h-56">
+                                <table class="w-full text-left text-xs">
+                                    <thead class="bg-slate-50 text-slate-500 uppercase font-semibold text-[10px] tracking-wider border-b border-slate-200 sticky top-0">
+                                        <tr id="csv-thead-row">
+                                            <!-- Headers loaded via JS -->
+                                        </tr>
+                                    </thead>
+                                    <tbody id="csv-tbody" class="divide-y divide-slate-100 font-mono">
+                                        <!-- Data rows loaded via JS -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Explanation Card -->
+                        <div class="bg-coral-50 border border-coral-100 rounded-xl p-3 text-xs text-coral-900 flex items-start space-x-2">
+                            <span class="font-bold text-lg leading-none shrink-0">💡</span>
+                            <p>Notice the differences in identifiers: <strong>V1</strong> uses <code>Login ID (CRxxxxx)</code> with a generic comment. <strong>V2</strong> references strict system <code>Wallet UUIDs</code> with adjustment tags.</p>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                title: "11. Troubleshooting Guide",
+                tip: "Bookmark this slide! It covers 90% of standard hiccups encountered by new staff.",
+                render: () => `
+                    <div class="max-w-4xl mx-auto space-y-6 h-full flex flex-col justify-center">
+                        <div>
+                            <span class="text-xs font-bold text-coral-500 uppercase tracking-widest">FAQ / Sandbox Checklist</span>
+                            <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Troubleshooting Common Hiccups</h2>
+                            <p class="text-sm text-slate-500">What to do when real operational processes don't go according to plan.</p>
+                        </div>
+
+                        <!-- FAQ Interactive Cards Grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <!-- Hiccup 1 -->
+                            <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl space-y-1 hover:border-coral-400 transition-all">
+                                <h4 class="font-bold text-xs text-slate-900 flex items-center">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-coral-500 mr-2"></span>
+                                    Marketing sent the file, but Compliance status is blank?
+                                </h4>
+                                <p class="text-[11px] text-slate-600 leading-relaxed">
+                                    <strong>Protocol:</strong> Stop processing immediately. Reach out to the Compliance Officer. Never pay before they provide the signed approval.
+                                </p>
+                            </div>
+
+                            <!-- Hiccup 2 -->
+                            <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl space-y-1 hover:border-coral-400 transition-all">
+                                <h4 class="font-bold text-xs text-slate-900 flex items-center">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-coral-500 mr-2"></span>
+                                    V2 Wallet ID does not match Client profile?
+                                </h4>
+                                <p class="text-[11px] text-slate-600 leading-relaxed">
+                                    <strong>Protocol:</strong> Check the DCC Tool database. If there's a discrepancy, flag this immediately on the Slack channel <strong>#partners_payment</strong>.
+                                </p>
+                            </div>
+
+                            <!-- Hiccup 3 -->
+                            <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl space-y-1 hover:border-coral-400 transition-all">
+                                <h4 class="font-bold text-xs text-slate-900 flex items-center">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-coral-500 mr-2"></span>
+                                    Emails are landing in Spam or getting ignored?
+                                </h4>
+                                <p class="text-[11px] text-slate-600 leading-relaxed">
+                                    <strong>Protocol:</strong> Double check if you prefixed the email subject line with <strong>"VERIFIED:"</strong>. This is critical for the Reconciliation team's automated filtering rules.
+                                </p>
+                            </div>
+
+                            <!-- Hiccup 4 -->
+                            <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl space-y-1 hover:border-coral-400 transition-all">
+                                <h4 class="font-bold text-xs text-slate-900 flex items-center">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-coral-500 mr-2"></span>
+                                    How long do we have to complete crediting?
+                                </h4>
+                                <p class="text-[11px] text-slate-600 leading-relaxed">
+                                    <strong>Protocol:</strong> Commissions are processed monthly. We aim to complete all payments within 5 business days after receiving verified CSVs from Marketing.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                title: "12. Ultimate Handover Quiz",
+                tip: "Answer all five questions correctly to unlock and download your completion certificate!",
+                render: () => `
+                    <div class="max-w-4xl mx-auto space-y-6 h-full flex flex-col justify-center">
+                        <div class="text-center space-y-2">
+                            <span class="text-xs font-bold text-coral-500 uppercase tracking-widest">Handover Verification</span>
+                            <h2 class="text-3xl font-extrabold text-slate-900">Are you ready to take over?</h2>
+                            <p class="text-sm text-slate-500 max-w-lg mx-auto">Complete this simple 5-question test to demonstrate your grasp of the Arbitrary Markup payments process!</p>
+                        </div>
+
+                        <!-- Interactive Quiz Controller Box -->
+                        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 shadow-sm max-w-xl mx-auto w-full">
+                            <div id="quiz-question-box" class="space-y-4">
+                                <!-- Loaded dynamically via JS -->
+                            </div>
+                            
+                            <div id="quiz-footer" class="mt-6 pt-4 border-t border-slate-200 flex justify-between items-center">
+                                <div class="text-xs text-slate-500 font-semibold" id="quiz-progress-text">
+                                    Question 1 of 5
+                                </div>
+                                <button onclick="nextQuizQuestion()" id="quiz-next-btn" class="bg-coral-500 hover:bg-coral-600 text-white font-bold text-xs px-4 py-2 rounded-lg transition-colors">
+                                    Confirm Answer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `
+            }
+        ];
+
+        // Mindmap Interaction details data
+        function revealMindmapDetails(role) {
+            const el = document.getElementById('mindmap-details-box');
+            let content = '';
+            
+            if (role === 'compliance') {
+                content = `
+                    <div class="space-y-1">
+                        <h4 class="font-extrabold text-coral-400 uppercase tracking-wide">🟢 Compliance Team: The Gatekeepers</h4>
+                        <p class="text-xs text-slate-300">
+                            The security and safety team. Their goal is to ensure all developers act ethically and inside the parameters of our system rules. 
+                            They output the official list of partners who are marked <strong>"OK to Pay"</strong>. No payout is possible without their nod.
+                        </p>
+                    </div>
+                `;
+            } else if (role === 'marketing') {
+                content = `
+                    <div class="space-y-1">
+                        <h4 class="font-extrabold text-coral-400 uppercase tracking-wide">📊 Marketing Team: The Calculators</h4>
+                        <p class="text-xs text-slate-300">
+                            They look at the Compliance "OK to Pay" list, then calculate the precise commission dollars using volume metrics.
+                            They draft the **payment CSV files** and send the request via Slack (<strong>#partners_payment</strong>) & Email to Finance.
+                        </p>
+                    </div>
+                `;
+            } else if (role === 'finance') {
+                content = `
+                    <div class="space-y-1">
+                        <h4 class="font-extrabold text-coral-400 uppercase tracking-wide">💼 Finance Team (Your Team): The Paymasters</h4>
+                        <p class="text-xs text-slate-300">
+                            We double-check marketing's calculations and verify formatting. Once confirmed, we update file nomenclature, submit the workflows, 
+                            credit the users on BackOffice V1/V2, and notify everyone on Slack!
+                        </p>
+                    </div>
+                `;
+            }
+            
+            el.innerHTML = content;
+            showAppModal('Ecosystem Data Loaded', `You are exploring the ${role} department details.`, 'success');
+        }
+
+        // Flowchart Phase Interaction Data
+        function revealFlowchartStep(step) {
+            const el = document.getElementById('flowchart-details-panel');
+            let content = '';
+
+            // Remove highlighted borders from all steps
+            document.querySelectorAll('.flowchart-step-btn').forEach(btn => {
+                btn.classList.remove('border-coral-500', 'bg-coral-50');
+                btn.classList.add('border-slate-200', 'bg-slate-50');
+            });
+
+            // Highlight chosen step
+            const clickedBtn = document.querySelectorAll('.flowchart-step-btn')[step - 1];
+            if (clickedBtn) {
+                clickedBtn.classList.remove('border-slate-200', 'bg-slate-50');
+                clickedBtn.classList.add('border-coral-500', 'bg-coral-50');
+            }
+
+            if (step === 1) {
+                content = `
+                    <div>
+                        <h4 class="font-bold text-xs uppercase text-coral-300">Phase 1 Checklist: Compliance Screening</h4>
+                        <p class="text-xs text-slate-200 mt-1">Check that all recipients in the forthcoming marketing bundle match the Approved Compliance roster.</p>
+                    </div>
+                    <span class="text-xs bg-coral-700 text-coral-100 px-3 py-1.5 rounded-full font-bold">1st Step</span>
+                `;
+            } else if (step === 2) {
+                content = `
+                    <div>
+                        <h4 class="font-bold text-xs uppercase text-coral-300">Phase 2 Checklist: Marketing Broadcast</h4>
+                        <p class="text-xs text-slate-200 mt-1">Marketing releases the CSV file on the #partners_payment Slack. File will arrive at your inbox shortly after.</p>
+                    </div>
+                    <span class="text-xs bg-coral-700 text-coral-100 px-3 py-1.5 rounded-full font-bold">2nd Step</span>
+                `;
+            } else if (step === 3) {
+                content = `
+                    <div>
+                        <h4 class="font-bold text-xs uppercase text-coral-300">Phase 3 Checklist: The Finance Audit (Crucial!)</h4>
+                        <p class="text-xs text-slate-200 mt-1">Verify values, format V1 accounts (CRxxx) and V2 wallets, rename source file to prefix "VERIFIED_" before forward dispatch.</p>
+                    </div>
+                    <span class="text-xs bg-coral-700 text-coral-100 px-3 py-1.5 rounded-full font-bold">Your Focus</span>
+                `;
+            } else if (step === 4) {
+                content = `
+                    <div>
+                        <h4 class="font-bold text-xs uppercase text-coral-300">Phase 4 Checklist: Post-Payment Closeout</h4>
+                        <p class="text-xs text-slate-200 mt-1">Run payment workflow inside accs_recon_partners. Complete crediting, then reply back to Slack & Email thread with confirmation.</p>
+                    </div>
+                    <span class="text-xs bg-emerald-600 text-emerald-100 px-3 py-1.5 rounded-full font-bold">Done ✅</span>
+                `;
+            }
+
+            el.innerHTML = content;
+        }
+
+        // CSV Auditor Game state variables
+        function checkGameRow(row, category) {
+            const panel = document.getElementById('game-feedback-panel');
+            panel.classList.remove('hidden');
+            
+            if (row === 1) {
+                panel.innerHTML = `
+                    <p class="font-bold text-coral-900">🎯 Correct! Great catch!</p>
+                    <p class="mt-1"><strong>Row 1 Error:</strong> The Login ID has been written as <code>CR_9983112</code> (with an underscore). Legacy BackOffice V1 logins never have underscores (e.g. they should be formatted as <code>CR9983112</code>).</p>
+                `;
+                showAppModal('Error Spot Success!', 'Nice eye. BackOffice V1 Login IDs do not contain underscores.', 'success');
+            } else if (row === 2) {
+                panel.innerHTML = `
+                    <p class="font-bold text-coral-900">🎯 Spot On!</p>
+                    <p class="mt-1"><strong>Row 2 Error:</strong> The BackOffice V2 Wallet ID is truncated/broken: <code>85fa2210-41fa-92da-1901bca2</code>. True UUIDs must contain five character groups split by dashes and span 36 characters.</p>
+                `;
+                showAppModal('Error Spot Success!', 'Exactly. Wallet IDs must follow strict full UUID formatting rules.', 'success');
+            } else if (row === 3) {
+                panel.innerHTML = `
+                    <p class="font-bold text-coral-900">🎯 Perfect!</p>
+                    <p class="mt-1"><strong>Row 3 Error:</strong> The amount is indicated as negative: <code>-218.41</code>. Commissions are adjustment credits paid *to* partners, meaning negative amounts represent an attempt to charge them!</p>
+                `;
+                showAppModal('Error Spot Success!', 'Absolutely! Commission runs must strictly be positive values.', 'success');
+            }
+        }
+
+        // Active selection for Live CSV tab
+        let currentCSVTab = 'v1';
+
+        function toggleCSVInspector(tab) {
+            currentCSVTab = tab;
+            const btnV1 = document.getElementById('btn-csv-v1');
+            const btnV2 = document.getElementById('btn-csv-v2');
+
+            if (tab === 'v1') {
+                btnV1.className = "text-xs font-bold px-4 py-1.5 rounded-md transition-all bg-coral-500 text-white shadow-sm";
+                btnV2.className = "text-xs font-bold px-4 py-1.5 rounded-md transition-all text-slate-600 hover:text-slate-900";
+                loadCSVTable(sampleV1CSV, ['Login ID', 'Currency', 'Amount', 'Type', 'Comment']);
+            } else {
+                btnV2.className = "text-xs font-bold px-4 py-1.5 rounded-md transition-all bg-coral-500 text-white shadow-sm";
+                btnV1.className = "text-xs font-bold px-4 py-1.5 rounded-md transition-all text-slate-600 hover:text-slate-900";
+                loadCSVTable(sampleV2CSV, ['Wallet UUID', 'Currency', 'Amount', 'Type', 'Comment']);
+            }
+        }
+
+        function loadCSVTable(data, headers) {
+            const thead = document.getElementById('csv-thead-row');
+            const tbody = document.getElementById('csv-tbody');
+
+            if (!thead || !tbody) return;
+
+            // Load Headers
+            thead.innerHTML = headers.map(h => `<th class="p-3">${h}</th>`).join('');
+
+            // Load Rows
+            tbody.innerHTML = data.map(row => {
+                const identifier = row.login_id || row.wallet_id;
+                return `
+                    <tr class="hover:bg-slate-50 transition-colors">
+                        <td class="p-3 text-slate-900 font-medium whitespace-nowrap overflow-hidden text-ellipsis max-w-xs" title="${identifier}">${identifier}</td>
+                        <td class="p-3 text-slate-600">${row.currency}</td>
+                        <td class="p-3 text-slate-900 font-semibold">$${row.amount.toLocaleString(undefined, {minimumFractionDigits: 2})}</td>
+                        <td class="p-3"><span class="px-2 py-0.5 text-[9px] font-bold rounded-full ${row.type === 'Adjustment' ? 'bg-emerald-100 text-emerald-800' : 'bg-blue-100 text-blue-800'}">${row.type}</span></td>
+                        <td class="p-3 text-slate-500 whitespace-nowrap text-ellipsis max-w-xs" title="${row.comment}">${row.comment}</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        // Quiz Logic State
+        const quizQuestions = [
+            {
+                q: "What is the primary layman definition of 'Arbitrary Markup' commission?",
+                options: [
+                    "A random tax penalty applied to new staff members.",
+                    "A commission paid monthly to API developers who build connections that bring trading volume.",
+                    "An exchange fee charged by external banks on dollar transactions.",
+                    "A marketing budget used for buying internet advertisements."
+                ],
+                correct: 1,
+                hint: "Recall the Icecream truck owner who connects to our factory to drive sales!"
+            },
+            {
+                q: "Which identifying code structure belongs strictly to BackOffice V1 (DSVG) clients?",
+                options: [
+                    "Full 36-character hexadecimal UUID format.",
+                    "Client Login IDs starting with 'CR' (e.g. CR5977250).",
+                    "A standard Gmail or Outlook account address.",
+                    "An international banking routing code."
+                ],
+                correct: 1,
+                hint: "V1 focuses on classic client logins like 'CR' codes, whereas V2 uses newer digital wallets."
+            },
+            {
+                q: "If you detect a discrepancy inside a payment CSV file during verification, what is the protocol?",
+                options: [
+                    "Delete the wrong row and process the payment anyway without notifying anyone.",
+                    "Guess the correct wallet ID using historical records in your downloads folder.",
+                    "Halt processing and notify the Marketing Team inside the #partners_payment Slack channel.",
+                    "Leave it blank and wait for the partner to complain next month."
+                ],
+                correct: 2,
+                hint: "Slack communication is key for safety. Never guess payment data!"
+            },
+            {
+                q: "What prefix should you append to both the verified CSV filename and the forwarded email subject line?",
+                options: [
+                    "APPROVED_BY_FINANCE_",
+                    "COMPLETED_PAYMENT_",
+                    "VERIFIED_",
+                    "URGENT_ACTION_REQUIRED_"
+                ],
+                correct: 2,
+                hint: "Check the 'Checklist Before Crediting' process list in your handover doc!"
+            },
+            {
+                q: "True or False: The BackOffice payments system allows a single analyst to generate and approve payments simultaneously without peer-review.",
+                options: [
+                    "True. Anyone can do both actions at once to save time.",
+                    "False. Our system strictly requires a second Reconciliation team member to execute and approve payments."
+                ],
+                correct: 1,
+                hint: "Think about the four-eyes principal mentioned in Slide 9!"
+            }
+        ];
+
+        let quizCurrentIndex = 0;
+        let quizUserAnswers = [];
+        let quizScore = 0;
+
+        function loadQuizQuestion() {
+            const box = document.getElementById('quiz-question-box');
+            if (!box) return;
+
+            const q = quizQuestions[quizCurrentIndex];
+            const isCompleted = quizCurrentIndex >= quizQuestions.length;
+
+            if (isCompleted) {
+                renderQuizResults();
+                return;
+            }
+
+            box.innerHTML = `
+                <div class="space-y-2">
+                    <span class="text-[10px] font-extrabold uppercase bg-coral-100 text-coral-800 px-2.5 py-1 rounded">Question ${quizCurrentIndex + 1} of 5</span>
+                    <h4 class="font-extrabold text-slate-900 text-base leading-snug mt-2">${q.q}</h4>
+                </div>
+
+                <div class="space-y-2 mt-4">
+                    ${q.options.map((opt, idx) => `
+                        <label class="flex items-start space-x-3 bg-white hover:bg-coral-50 border border-slate-200 p-3 rounded-xl cursor-pointer transition-all">
+                            <input type="radio" name="quiz-opt" value="${idx}" class="mt-1 h-4 w-4 text-coral-500 focus:ring-coral-500">
+                            <span class="text-xs text-slate-700 font-medium">${opt}</span>
+                        </label>
+                    `).join('')}
+                </div>
+
+                <div class="bg-coral-50 border border-coral-100 rounded-xl p-3 text-[11px] text-coral-800 mt-4 flex items-start space-x-2">
+                    <span class="font-bold">💡 Tip:</span>
+                    <p class="leading-relaxed">${q.hint}</p>
+                </div>
+            `;
+
+            document.getElementById('quiz-progress-text').innerText = `Question ${quizCurrentIndex + 1} of ${quizQuestions.length}`;
+            document.getElementById('quiz-next-btn').innerText = quizCurrentIndex === quizQuestions.length - 1 ? "Finish Test" : "Confirm Answer";
+        }
+
+        function nextQuizQuestion() {
+            const selected = document.querySelector('input[name="quiz-opt"]:checked');
+            if (!selected) {
+                showAppModal('Please Select an Option', 'You must choose an answer option to proceed with the quiz.', 'error');
+                return;
+            }
+
+            const answerIdx = parseInt(selected.value);
+            quizUserAnswers.push(answerIdx);
+
+            // Double check correctness
+            if (answerIdx === quizQuestions[quizCurrentIndex].correct) {
+                quizScore++;
+            }
+
+            quizCurrentIndex++;
+
+            if (quizCurrentIndex < quizQuestions.length) {
+                loadQuizQuestion();
+            } else {
+                renderQuizResults();
+            }
+        }
+
+        function renderQuizResults() {
+            const box = document.getElementById('quiz-question-box');
+            const footer = document.getElementById('quiz-footer');
+            if (!box) return;
+
+            footer.classList.add('hidden');
+
+            const passed = quizScore >= 4;
+
+            if (passed) {
+                box.innerHTML = `
+                    <div class="text-center space-y-4 py-4">
+                        <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-3xl font-bold">🎉</div>
+                        <div>
+                            <h3 class="font-extrabold text-2xl text-emerald-950">Congratulations! You Passed!</h3>
+                            <p class="text-xs text-slate-500 mt-1">You achieved a score of <strong class="text-coral-500">${quizScore} / 5</strong> on the verification exam.</p>
+                        </div>
+
+                        <!-- Certified Certificate Generator -->
+                        <div class="border-4 border-dashed border-coral-300 rounded-xl p-6 bg-white space-y-4 relative overflow-hidden shadow-sm">
+                            <div class="absolute -top-10 -right-10 w-24 h-24 bg-coral-50 rounded-full opacity-50"></div>
+                            <div class="space-y-1">
+                                <span class="text-[9px] font-bold text-coral-500 uppercase tracking-widest">Certificate of Training Completion</span>
+                                <h4 class="font-black text-lg text-slate-900 leading-none">Partners Payment Officer</h4>
+                                <p class="text-[10px] text-slate-500 mt-1">Granted to the dedicated student who completed the 12-stage active interactive handover guide on <strong>Arbitrary Markup Commission</strong> processing.</p>
+                            </div>
+                            <div class="flex items-center justify-between text-[10px] border-t border-slate-100 pt-4">
+                                <div>
+                                    <span class="text-slate-400 block">Class Engine Version</span>
+                                    <strong class="text-slate-800">May 2026 Release</strong>
+                                </div>
+                                <div class="text-right">
+                                    <span class="text-slate-400 block">Verification Stamp</span>
+                                    <strong class="text-emerald-600">APPROVED & READY</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button onclick="resetQuizState()" class="text-xs font-bold text-coral-500 hover:text-coral-700 underline block mx-auto">
+                            Restart Quiz
+                        </button>
+                    </div>
+                `;
+            } else {
+                box.innerHTML = `
+                    <div class="text-center space-y-4 py-4">
+                        <div class="w-16 h-16 bg-red-100 text-red-600 rounded-full flex items-center justify-center mx-auto text-3xl font-bold">❌</div>
+                        <div>
+                            <h3 class="font-extrabold text-xl text-red-950">Let's Try That Again!</h3>
+                            <p class="text-xs text-slate-500 mt-1">You scored <strong class="text-red-600">${quizScore} / 5</strong>. We require at least 4 correct answers to issue your training certificate.</p>
+                        </div>
+                        <p class="text-xs text-slate-600 leading-relaxed max-w-sm mx-auto">Review the checklist (Slide 6) and system separation details (Slide 3) before retrying!</p>
+                        <button onclick="resetQuizState()" class="bg-coral-500 hover:bg-coral-600 text-white font-bold text-xs px-6 py-2 rounded-lg transition-colors inline-block">
+                            Restart Quiz
+                        </button>
+                    </div>
+                `;
+            }
+        }
+
+        function resetQuizState() {
+            quizCurrentIndex = 0;
+            quizUserAnswers = [];
+            quizScore = 0;
+            const footer = document.getElementById('quiz-footer');
+            if (footer) footer.classList.remove('hidden');
+            loadQuizQuestion();
+        }
+
+        // Global Presentation Slide Controller
+        function changeSlide(direction) {
+            let nextIdx = currentSlideIdx + direction;
+            if (nextIdx >= 0 && nextIdx < slides.length) {
+                renderSlide(nextIdx);
+            }
+        }
+
+        function renderSlide(idx) {
+            currentSlideIdx = idx;
+            const stage = document.getElementById('slide-stage');
+            const footerPrev = document.getElementById('btn-prev');
+            const footerNext = document.getElementById('btn-next');
+            const currentBadge = document.getElementById('current-slide-badge');
+            
+            // Apply simple slide transitions
+            stage.classList.remove('slide-active');
+            stage.classList.add('slide-enter');
+
+            // Set current side info tip
+            const tipEl = document.getElementById('handover-tip');
+            if (tipEl) {
+                tipEl.innerText = slides[idx].tip;
+            }
+
+            setTimeout(() => {
+                // Render slide markup
+                stage.innerHTML = slides[idx].render();
+                stage.classList.add('slide-active');
+                stage.classList.remove('slide-enter');
+
+                // Adjust disabled navigation states
+                footerPrev.disabled = idx === 0;
+                footerPrev.style.opacity = idx === 0 ? "0.4" : "1";
+                
+                // If it is the last slide, hide standard Next button functionality to prevent overflow
+                if (idx === slides.length - 1) {
+                    footerNext.style.opacity = "0.4";
+                    footerNext.disabled = true;
+                } else {
+                    footerNext.style.opacity = "1";
+                    footerNext.disabled = false;
+                }
+
+                currentBadge.innerText = idx + 1;
+
+                // Sync indices
+                renderSidebarNav();
+                renderProgressDots();
+
+                // Extra initializations per slide
+                if (idx === 6) {
+                    // Check if game-feedback-panel is present and reset
+                } else if (idx === 9) {
+                    toggleCSVInspector('v1');
+                } else if (idx === 11) {
+                    resetQuizState();
+                }
+            }, 100);
+        }
+
+        // Dynamic sidebar render
+        function renderSidebarNav() {
+            const nav = document.getElementById('sidebar-nav');
+            if (!nav) return;
+
+            nav.innerHTML = slides.map((slide, idx) => {
+                const isActive = idx === currentSlideIdx;
+                return `
+                    <button onclick="renderSlide(${idx})" class="w-full text-left flex items-center space-x-3 px-3 py-2.5 rounded-lg text-xs font-semibold tracking-tight transition-all ${isActive ? 'bg-coral-500 text-white shadow-sm' : 'text-slate-600 hover:bg-slate-200 hover:text-slate-900'}">
+                        <span class="w-5 h-5 rounded-full flex items-center justify-center border font-mono ${isActive ? 'bg-coral-600 border-coral-400 text-white' : 'bg-slate-200 border-slate-300 text-slate-600'}">
+                            ${idx + 1}
+                        </span>
+                        <span class="truncate">${slide.title.replace(/^\d+\.\s*/, '')}</span>
+                    </button>
+                `;
+            }).join('');
+        }
+
+        // Progress Dots controller
+        function renderProgressDots() {
+            const container = document.getElementById('progress-dots-container');
+            if (!container) return;
+
+            container.innerHTML = slides.map((_, idx) => {
+                const isActive = idx === currentSlideIdx;
+                return `
+                    <button onclick="renderSlide(${idx})" class="w-2.5 h-2.5 rounded-full transition-all ${isActive ? 'bg-coral-500 scale-125' : 'bg-slate-700 hover:bg-slate-500'}" title="Go to slide ${idx + 1}"></button>
+                `;
+            }).join('');
+        }
+
+        // Native Alert Alternative Dialog popups
+        function showAppModal(title, desc, type = 'success') {
+            const modal = document.getElementById('app-modal');
+            const mTitle = document.getElementById('modal-title');
+            const mDesc = document.getElementById('modal-desc');
+            const iconContainer = document.getElementById('modal-icon-container');
+
+            if (!modal) return;
+
+            mTitle.innerText = title;
+            mDesc.innerText = desc;
+
+            // Type theme
+            if (type === 'success') {
+                iconContainer.className = "bg-emerald-500 text-white rounded-full p-2 shrink-0";
+                iconContainer.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                `;
+            } else {
+                iconContainer.className = "bg-red-500 text-white rounded-full p-2 shrink-0";
+                iconContainer.innerHTML = `
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                    </svg>
+                `;
+            }
+
+            modal.classList.remove('hidden');
+
+            // Autoclose after 4.5s
+            setTimeout(() => {
+                closeAppModal();
+            }, 4500);
+        }
+
+        function closeAppModal() {
+            const modal = document.getElementById('app-modal');
+            if (modal) {
+                modal.classList.add('hidden');
+            }
+        }
+
+        // On App Initialization bootstrap
+        window.onload = function () {
+            renderSlide(0);
+        };
+    </script>
+</body>
+</html>
